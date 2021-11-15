@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.torres.edgar.perfumeprices.PerfumePriceList"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textPerfume"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Hello World!"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBarPerfume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="4"
+        android:progress="0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="2"
+        android:progress="0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textMembershipType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/RadioMembership"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_weight="0.06"
+        android:tooltipText="Membership">
+
+        <RadioButton
+            android:id="@+id/radioMember"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:checked="false"
+            android:text="Member" />
+
+        <RadioButton
+            android:id="@+id/radioNonMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Non Member" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/textQty"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Qty Ordered"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textTPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <ToggleButton
+        android:id="@+id/buttonOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.19"
+        android:text="ToggleButton"
+        android:textOff="Click for Pick Up"
+        android:textOn="Click for Delivery" />
+
+    <TextView
+        android:id="@+id/textOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Current Method: Delivery"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>
